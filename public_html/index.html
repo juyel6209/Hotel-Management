@@ -1,0 +1,177 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Hotel Management</title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/dhtmlxcalendar.css"/>
+	
+<script src="js/dhtmlxcalendar.js"></script>
+	
+<style>
+		#calendar,
+		#calendar2,
+		 	{
+			border: 1px solid #909090;
+			font-family: Tahoma;
+			font-size: 12px;
+			}
+</style>
+	<script>
+		var myCalendar;
+		function doOnLoad() 
+			{
+			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2",]);
+			}
+	</script
+</head>
+<body onload="doOnLoad();">
+<div id="holder"><a href="index.html"><img src="images/22.jpg" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+    	<li><a href="login.html" target = "_blank">Login</a></li>
+    	<li><a href="overview.html" target = "_blank">Overview</a></li>
+    	<li><a href="res.html" target = "_blank">Restaurant</a></li>
+    	<li><a href="book.html" target = "_blank">Booking</a></li>
+        <li><a href="index.html" target = "_blank">Home</a></li>
+    	</ul>
+    </div>
+	<br> 
+    <div id="ab">
+    <div id="check">
+    <br>
+	<form>
+		<div style="position:relative;height:80px;">
+		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            		<input id="calendar" name="in" placeholder="25-07-2019" required="" type="text"> <br><br>
+		
+		<label for="in">Check out:</label> &nbsp;&nbsp;
+            		<input id="calendar2" name="out" placeholder="30-07-2019" required="" type="text"> <br><br>
+		
+		</div>
+			Room Type:
+                <select name="room">
+                    <option value="A/C">A/C</option>
+        			<option value="Non-A/C">Non-A/C</option>
+                </select>
+                <select name="type">
+                    <option value="single">Single</option>
+					<option value="double">Double</option>
+                    <option value="three">Three</option>
+                </select>
+	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" name="submit" value="submit" />
+	<input type="reset" name="reset" value="Reset" />
+</form>
+   </div>
+   &nbsp;
+   <div id="chat">
+    	<form action="" method="post">
+				<label for="in">Chat</label> 
+					<input id="chat" name="chat" placeholder="message" required=""> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" name="submit" value="submit" />
+				</form>
+    </div>
+	<br>
+	<br>
+    <div id="fd"> 
+				<form action="" method="post">
+				<label for="in">Feedback</label> 
+					<input id="fd" name="feed" placeholder="Type message" required=""> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" name="submit" value="submit" />
+				</form>
+	</div>
+	</div>
+        <br clear="all"/>
+ 	<div id="ac">
+    	<h1>A/C</h1>
+    		<div id="a">
+            <br><br><br><br>
+        		&nbsp;&nbsp;	
+           		Single Tk.2000
+          	 	<br>&nbsp;&nbsp;&nbsp;
+                
+           	<a href="book.html"><input type="submit" value="Booking"></a>
+        	</div><!--a-->
+        	<div id="b">
+          		<br><br><br><br>
+           		&nbsp;&nbsp;&nbsp;
+				Double Tk.3000
+           		 <br>&nbsp;&nbsp;&nbsp;
+               
+           		<a href="book.html"><input type="submit" value="Booking"></a>
+        	</div>
+        	<div id="c">
+        		<br><br><br><br>
+                &nbsp;&nbsp;
+                Three Tk.5000
+                <br>&nbsp;&nbsp;&nbsp;
+              
+               <a href="book.html"><input type="submit" value="Booking"></a>	
+        	</div>
+          </div>
+   
+    <div id="offer">
+    	<h1>Special Offers</h1>
+        	<div id="a1"><p>&nbsp;</p>
+            <br><br>
+      			  Single Bed<br>
+      			  Three Booking<br>For <b>5</b>% discount
+    		</div>
+            <div id="b1"><p>&nbsp;</p><br>
+           <br>
+      			  Double Bed<br>
+      			  Three Booking<br> For <b>10</b>% discount
+    		</div>
+            <div id="c1"><p>&nbsp;</p><br>
+            <br>
+      			  Three Bed<br>
+      			  Three Booking<br> For <b>15</b>% discount
+    		</div>
+    </div>
+    <div id="nonac">
+    	<h1>Non-A/C</h1>
+        	<div id="a2">
+            	&nbsp;<p>&nbsp;</p>
+        		&nbsp;&nbsp;	
+           		Single Tk.1000
+          	 	<br>&nbsp;&nbsp;&nbsp;
+              
+           		<a href="book.html"><input type="submit" value="Booking"></a>	
+        	</div><!--a2-->
+        	<div id="b2">
+          		&nbsp;<p>&nbsp;</p>
+                &nbsp;&nbsp;
+				Double Tk.2000
+           		 <br>&nbsp;&nbsp;&nbsp;
+                
+           		 <a href="book.html"><input type="submit" value="Booking"></a>
+        	</div>
+        	<div id="c2">
+        	&nbsp;<p>&nbsp;</p>
+                &nbsp;&nbsp;
+                Three Tk.3500
+                <br>&nbsp;&nbsp;&nbsp;
+              
+                <a href="book.html"><input type="submit" value="Booking"></a>	
+        	</div>
+    </div>
+	<div id="rest">
+    		<h1>Special Dishes</h1>
+        	<div id="a3">
+            </div>
+            <div id="b3">
+		<a href="#"></a>
+            </div>
+            <div id="c3">
+            </div>
+	</div>
+</div>
+</body>
+</html>

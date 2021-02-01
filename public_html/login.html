@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="css/login.css"/>
+<script type="text/javascript">
+function clicked() {
+    alert('Successfully submitted');
+}
+
+    $("#formname").resetForm();
+</script>
+</head>
+<body>
+<div id="holder"><a href="index.html"><img src="images/22.jpg" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+    	<li><a href="login.html">Login</a></li>
+    	<li><a href="overview.html">Overview</a></li>
+    	<li><a href="res.html">Restaurant</a></li>
+    	<li><a href="book.html">Booking</a></li>
+        <li><a href="index.html">Home</a></li>
+    	</ul>
+    </div>
+<div id="login">
+<br>
+	<h1> Login</h1>
+  		<div id="p"><br><br><br>
+	<form action="login.php" method="post">
+<label for="number">Room Number:</label>&nbsp;&nbsp;
+            <input id="ri" name="rnumber" placeholder=" Enter Your Room Number" required="" type="text"> <br><br>
+	
+<label for="number">Room Id:</label> 
+            <input id="rm" name="rid" placeholder=" Enter Your Room Id" required="" type="text"> <br><br>
+Cancel:
+      	<input type="radio" name="cancel" value="yes">Yes
+   		<input type="radio" name="cancel" value="no">No
+   		<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <form action="Submit.php" method="post">
+</form>
+        </div>
+</div>
+</div>
+</body>
+</html>
